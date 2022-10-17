@@ -11,7 +11,7 @@ def Neron(inputs, weights, bias):
     total = 0
     for i in range(len(inputs)):
         total += inputs[i]*weights[i]
-    return hex(sigmoid(total+bias))
+    return sigmoid(total+bias)
 
 x, y = 30, 560
 Lbias = randint(0, 100)
